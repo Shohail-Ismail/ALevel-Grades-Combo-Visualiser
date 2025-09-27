@@ -1,9 +1,9 @@
 # Department for Education: A-Level Grade Combinations Analyser
 
    * [Background information](#background-information)
+   * [Running the app](#running-the-app)
    * [Core features](#core-features)
    * [Limitations](#limitations)
-   * [Running the app](#running-the-app)
 
 ---
 
@@ -18,6 +18,33 @@ Designed for interpretability and policy relevance, the app allows users to:
 - Compare normalised PPE scores between groups of students based on subject pairings, as well as percentage-wise comparisons
 
 All data is fully preprocessed outside the app - no calculations or inference are performed within the application. This ensures clarity, reproducibility, and speed.
+
+---
+
+## Running the app
+
+- **R version required**: 4.2.0 or above  
+- **Required libraries**:
+  - `shiny`
+  - `dplyr`
+  - `readr`
+  - `DT`
+  - `shinyalert`
+  - `plotly`
+
+- **Input data required**:
+  - `subject_combination_precomputed.csv` (placed in the working directory)
+  - Due to GDPR regulations, the actual data has been removed, although a mockup of toy data of 10% the size of the actual dataset has been used.
+
+### Running locally
+
+```r
+# install packages
+install.packages(c("shiny", "dplyr", "readr", "DT", "shinyalert", "plotly"))
+
+# then run the app
+shiny::runApp("app.R")
+```
 
 ---
 
@@ -76,29 +103,3 @@ All data is fully preprocessed outside the app - no calculations or inference ar
 
 - **Limited accessibility enhancements**  
   - Basic screen reader compatibility and contrast considered, but future improvements could include ARIA labels, tab key navigation cues, and full WCAG compliance
-
----
-
-## Running the app
-
-- **R version required**: 4.2.0 or above  
-- **Required libraries**:
-  - `shiny`
-  - `dplyr`
-  - `readr`
-  - `DT`
-  - `shinyalert`
-  - `plotly`
-
-- **Input data required**:
-  - `subject_combination_precomputed.csv` (placed in the working directory)
-  - Due to GDPR regulations, the actual data has been removed, although a mockup of toy data of 10% the size of the actual dataset has been used.
-
-### Running locally
-
-```r
-# install packages
-install.packages(c("shiny", "dplyr", "readr", "DT", "shinyalert", "plotly"))
-
-# then run the app
-shiny::runApp("app.R")
