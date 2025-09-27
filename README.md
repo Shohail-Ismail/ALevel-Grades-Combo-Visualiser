@@ -9,7 +9,7 @@
 
 ## Background information
 
-The **Department for Education (DfE) A-Level Grade Combinations Analyser** is an R Shiny application developed during my internship at the DfE. It visualises precomputed A-Level subject pairings and student performance (PPE scores) to support decision-making by students, parents, and University admissions boards. Presented to a group of interdepartmental policymakers and Ofqual analysts, it is now under review for further features to be added (i.e., separating by sex, postcode, etc.).
+The Department for Education (DfE) A-Level Grade Combinations Analyser is an R Shiny application prototype developed during my internship at the DfE. It visualises precomputed A-Level subject pairings and student performance (PPE scores) to support decision-making by students, parents, and University admissions boards. It was presented to a group of interdepartmental policymakers and Ofqual analysts, where it was adopted and enhanced, giving the [current page as it exists today](https://analytics.ofqual.gov.uk/apps/Alevel/SubjectCombinations/).
 
 Designed for interpretability and policy relevance, the app allows users to:
 
@@ -17,7 +17,7 @@ Designed for interpretability and policy relevance, the app allows users to:
 - View grade distributions across individual subjects
 - Compare normalised PPE scores between groups of students based on subject pairings, as well as percentage-wise comparisons
 
-All data is fully **preprocessed outside the app** - no calculations or inference are performed within the application. This ensures clarity, reproducibility, and speed.
+All data is fully preprocessed outside the app - no calculations or inference are performed within the application. This ensures clarity, reproducibility, and speed.
 
 ---
 
@@ -25,25 +25,25 @@ All data is fully **preprocessed outside the app** - no calculations or inferenc
 
 - **Interactive grade distribution visualisation**  
   - Users can select a subject and view a dynamic bar chart of grade distributions using traditional UK grade bands (A*, A and above, etc.).
-  - Built with **Plotly** for interactive tooltips and accessibility.
+  - Built with Plotly for interactive tooltips and accessibility.
 
 - **Explore subject pairings and performance (all grades)**  
   - Users select a subject to view precomputed pairings showing:
     - Number of students taking both subjects
     - Difference in average PPE scores between students who did and didn’t take the second subject
-  - Performance differences are presented in **neutral, non-inferential** terms (e.g. `+5.1 PTS`)
-  - Clicking a row opens a **ShinyAlert** popup with full details
+  - Performance differences are presented in neutral, non-inferential terms (e.g. `+5.1 PTS`)
+  - Clicking a row opens a ShinyAlert popup with full details
 
 - **Filter subject pairings by grade band**  
   - Enables viewing of subject pairings restricted to a selected grade level (e.g. “B and above”)
-  - **Performance comparisons are hidden** in this view to avoid misinterpretation
+  - **Performance comparisons are hidden in this view to avoid misinterpretation**
   - A clear in-app explanation is displayed to reinforce this
 
 - **Designed for non-techincal users**  
   - No policy knowledge is required
   - Neutral UI language (e.g. avoids “correlation”, “impact”, “increase”)
   - Clean layout using `fluidPage()` and `tabsetPanel()` with scrollable, readable tables
-  - **Dark mode** available for accessibility and usability purposes
+  - Dark mode available for accessibility and usability purposes
  
 
 ### App preview
@@ -63,7 +63,7 @@ All data is fully **preprocessed outside the app** - no calculations or inferenc
 
 - **No statistical inference**  
   - The app is explicitly non-inferential - no significance testing or causal claims
-  - PPE comparisons are **descriptive only** and based on precomputed values
+  - PPE comparisons are descriptive only and based on precomputed values
 
 - **No specific grades**
   - Cannot see how many students got a specific grade, (i.e., cannot see how many students got exactly a B in Mathematics, only how many got B and above). This is largely due to this specific functionality not being needed during the project, however this will likely be added in future updates.
