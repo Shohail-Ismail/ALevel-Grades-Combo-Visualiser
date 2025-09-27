@@ -23,20 +23,13 @@ All data is fully preprocessed outside the app - no calculations or inference ar
 
 ## Running the app
 
-- **R version required**: 4.2.0 or above  
-- **Required libraries**:
-  - `shiny`
-  - `dplyr`
-  - `readr`
-  - `DT`
-  - `shinyalert`
-  - `plotly`
-
+- **R version required**: 4.2.0 or above
 - **Input data required**:
-  - `subject_combination_precomputed.csv` (placed in the working directory)
-  - Due to GDPR regulations, the actual data has been removed, although a mockup of toy data of 10% the size of the actual dataset has been used.
+  - `subject_combination_precomputed.csv` (placed in the working directory). Due to GDPR regulations, the actual data has been removed, although a mockup of anonymised data of 10% the original size has been included
 
-### Running locally
+**You must download R to run this program. Alternatively, a conda environment can be created.**
+
+### R:
 
 ```r
 # install packages
@@ -45,8 +38,17 @@ install.packages(c("shiny", "dplyr", "readr", "DT", "shinyalert", "plotly"))
 # then run the app
 shiny::runApp("app.R")
 ```
+### R with conda:
 
----
+```bash
+# create environment with R 4.2 and pkgs
+conda create -n shiny-env r-base=4.2 r-shiny r-dplyr r-readr r-dt r-shinyalert r-plotly -c conda-forge
+conda activate shiny-env
+R
+
+# then run the app in R console
+> shiny::runApp("app.R")
+```
 
 ## Core features
 
