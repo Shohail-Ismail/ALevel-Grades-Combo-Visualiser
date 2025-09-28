@@ -78,13 +78,13 @@ R
 ### App preview
 
 #### Tab 1: Grade distribution checker
-![Tab 1](DfE-App-Tab1.png)
+![Tab 1](assets/DfE-App-Tab1.png)
 
 #### Tab 2: Overall grade combinations
-![Tab 2](DfE-App-Tab3.png)
+![Tab 2](assets/DfE-App-Tab3.png)
 
 #### Tab 3: Grade-filtered grade combinations
-![Tab 3](DfE-App-Tab2.png)
+![Tab 3](assets/DfE-App-Tab2.png)
 
 ---
 
