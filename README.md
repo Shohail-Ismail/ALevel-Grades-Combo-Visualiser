@@ -25,8 +25,6 @@ Analysis of the data was done beforehand for causality using research and analys
   - Therefore, <ins>**this website should only be used as supplementary (not primary) information for decision-making**</ins> (as stated on the website).
 
 The report emphasizes that statistical difficulty measures are not direct measures of performance standards, demand, effort, or grading leniency/severity; differences can arise from many unobserved factors. It also flags model limitations (e.g., unidimensionality assumption, data‑model fit)
-
-
 <br></br><br>
 
 Uses of the app include:
