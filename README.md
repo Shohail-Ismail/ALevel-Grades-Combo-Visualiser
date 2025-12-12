@@ -9,15 +9,34 @@
 
 ## Background information
 
-The Department for Education (DfE) A-Level Grade Combinations Analyser is an R Shiny application prototype developed during my internship at the DfE. It visualises precomputed A-Level subject pairings and student performance (PPE scores) to support decision-making by students, parents, and University admissions boards. It was presented to a group of interdepartmental policymakers and Ofqual analysts, where it was adopted and enhanced, giving the [current page as it exists today](https://analytics.ofqual.gov.uk/apps/Alevel/SubjectCombinations/).
+The Department for Education (DfE) A-Level Grade Combinations Analyser is an R Shiny application prototype developed during my internship at the DfE.
 
-Designed for interpretability and policy relevance, the app allows users to:
+- Explores the correlations in student performance between A-Level subjects, based on mixed data from 2022-24 (pre + post pandemic).
+- Supports decision-making for University admissions boards, policymakers, parents, and students.
+- All data precomputed so no inference is performed within the application - ensures confidentiality, statistical reproducibility, and reduced page latency for stakeholders. 
 
-- Explore how often subject combinations occur, and the relevance between getting grades in one A-Level subject to others (i.e., how getting an A in Mathematics affects students' grades in Physics)
-- View grade distributions across individual subjects
-- Compare normalised PPE scores between groups of students based on subject pairings, as well as percentage-wise comparisons
+Presented at the end of my internship to a group of interdepartmental policymakers and Ofqual analysts, where it was adopted and fed more data to give the [current page as it exists today](https://analytics.ofqual.gov.uk/apps/Alevel/SubjectCombinations/).
+<br></br><br>
 
-All data is fully preprocessed outside the app - no calculations or inference are performed within the application. This ensures clarity, reproducibility, and speed.
+Analysis of the data was done beforehand for causality using research and analysis methods from a [2024 Ofqual paper on this topic](https://assets.publishing.service.gov.uk/media/66a1022dfc8e12ac3edb03ee/ISC_2023.pdf).
+  - Statistical analysis was used to quantify whether the data defended inter-subject comparability.
+      - (i.e., whether there is a real 'ability' dimension that allows meaningful comparisons to be made between students' grades in completely-different subjects)
+  - Found strong correlations between prior attainment and grade outcomes across a signficant number of subject combinations, but this is not the only/primary factor at play for the result and there are limitations with model used (discussed in Ofqual's paper).
+  - Therefore, <ins>**this website should only be used as supplementary (not primary) information for decision-making**</ins> (as stated on the website).
+
+The report emphasizes that statistical difficulty measures are not direct measures of performance standards, demand, effort, or grading leniency/severity; differences can arise from many unobserved factors. It also flags model limitations (e.g., unidimensionality assumption, data‑model fit)
+
+
+<br></br><br>
+
+Uses of the app include:
+
+- Exploring the impacts between grades in certain A-Level subjects on others, based on historical data. Used best by chaining results to answer questions of varying complexities, for example:
+    - **Simple**: *Which subject(s) pairing is most common with Physics?*
+    - **Intermediate**: *How does choosing Art vs choosing Biology correlate to final grade in Mathematics?*
+    - **Complex**: *What is the average grade point improvement in Further Mathematics for high performers vs low performers, given they took Mathematics and Physics?*
+- Viewing grade distribution plots for each query across individual subjects and grades.
+- Comparing normalised average grade point and percentage-wise comparisons across student performance and/or subjects.
 
 ---
 
@@ -25,7 +44,7 @@ All data is fully preprocessed outside the app - no calculations or inference ar
 
 - **R version required**: 4.2.0 or above
 - **Input data required**:
-  - `subject_combination_precomputed.csv` (placed in the working directory). Due to GDPR regulations, the actual data has been removed, although a mockup of anonymised data of 10% the original size has been included
+  - `SubjectComb_Final_RANDOMISED.csv` (placed in the working directory). Due to GDPR regulations, the actual data has been removed. A mockup of anonymised data of 10% the original size has been included for demo.
 
 **You must download R to run this program. Alternatively, a conda environment can be created.**
 
