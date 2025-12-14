@@ -1,6 +1,9 @@
 # Department for Education: A-Level Grade Combinations Analyser
 
    * [Background information](#background-information)
+     * [Summary](#summary)
+     * [Analysis](#analysis)
+     * [Visualiser use-cases](#visualiser-use-cases)
    * [Running the app](#running-the-app)
    * [Core features](#core-features)
    * [Limitations](#limitations)
@@ -8,6 +11,7 @@
 ---
 
 ## Background information
+### <ins>Summary</ins>
 
 The Department for Education (DfE) A-Level Grade Combinations Analyser is an R Shiny application prototype developed during my internship at the DfE.
 
@@ -16,8 +20,10 @@ The Department for Education (DfE) A-Level Grade Combinations Analyser is an R S
 - All data precomputed so no inference is performed within the application - ensures confidentiality, statistical reproducibility, and reduced page latency for stakeholders. 
 
 Presented at the end of my internship to a group of interdepartmental policymakers and Ofqual analysts, where it was adopted and fed more data to give the [current page as it exists today](https://analytics.ofqual.gov.uk/apps/Alevel/SubjectCombinations/).
-<br></br><br>
 
+<br>
+
+### <ins>Analysis</ins>
 Analysis of the data was done beforehand for causality using research and analysis methods from a [2024 Ofqual paper on this topic](https://assets.publishing.service.gov.uk/media/66a1022dfc8e12ac3edb03ee/ISC_2023.pdf).
   - Statistical analysis was used to quantify whether the data defended inter-subject comparability.
       - (i.e., whether there is a real 'ability' dimension that allows meaningful comparisons to be made between students' grades in completely-different subjects)
@@ -25,8 +31,10 @@ Analysis of the data was done beforehand for causality using research and analys
   - Therefore, <ins>**this website should only be used as supplementary (not primary) information for decision-making**</ins> (as stated on the website).
 
 >Note: My final report for the internship emphasised this point that the statistical difficulty measures used were not direct measures of performance standards due to differences that may arise from many other factors; facts that were mentioned in the Ofqual paper along with the intrinsic stat-model limitations.
-<br></br><br>
 
+<br>
+
+### <ins>Visualiser use-cases</ins>
 Uses of the app include:
 
 - Exploring the impacts between grades in certain A-Level subjects on others, based on historical data. Used best by chaining results to answer questions of varying complexities, for example:
