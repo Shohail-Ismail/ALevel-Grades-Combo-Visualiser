@@ -2,7 +2,7 @@
 
    * [Background information](#background-information)
      * [Summary](#summary)
-     * [Analysis](#analysis)
+     * [Causal analysis](#causal-analysis)
      * [Visualiser use-cases](#visualiser-use-cases)
    * [Running the app](#running-the-app)
    * [Core features](#core-features)
@@ -23,7 +23,7 @@ Presented at the end of my internship to a group of interdepartmental policymake
 
 <br>
 
-### <ins>Analysis</ins>
+### <ins>Causal analysis</ins>
 Analysis of the data was done beforehand for causality using research and analysis methods from a [2024 Ofqual paper on this topic](https://assets.publishing.service.gov.uk/media/66a1022dfc8e12ac3edb03ee/ISC_2023.pdf).
   - Statistical analysis was used to quantify whether the data defended inter-subject comparability.
       - (i.e., whether there is a real 'ability' dimension that allows meaningful comparisons to be made between students' grades in completely-different subjects)
