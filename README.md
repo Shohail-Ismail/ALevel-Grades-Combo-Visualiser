@@ -24,7 +24,7 @@ Analysis of the data was done beforehand for causality using research and analys
   - Found strong correlations between prior attainment and grade outcomes across a signficant number of subject combinations, but this is not the only/primary factor at play for the result and there are limitations with model used (discussed in Ofqual's paper).
   - Therefore, <ins>**this website should only be used as supplementary (not primary) information for decision-making**</ins> (as stated on the website).
 
-The report emphasizes that statistical difficulty measures are not direct measures of performance standards, demand, effort, or grading leniency/severity; differences can arise from many unobserved factors. It also flags model limitations (e.g., unidimensionality assumption, data‑model fit)
+My final report for the internship emphasised this point that the statistical difficulty measures used were not direct measures of performance standards due to differences that may arise from many other factors; facts that were mentioned in the Ofqual paper along with the intrinsic stat-model limitations.
 <br></br><br>
 
 Uses of the app include:
