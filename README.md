@@ -79,27 +79,10 @@ R
 
 ## Core features
 
-- **Interactive grade distribution visualisation**  
-  - Users can select a subject and view a dynamic bar chart of grade distributions using traditional UK grade bands (A*, A and above, etc.).
-  - Built with Plotly for interactive tooltips and accessibility.
-
-- **Explore subject pairings and performance (all grades)**  
-  - Users select a subject to view precomputed pairings showing:
-    - Number of students taking both subjects
-    - Difference in average PPE scores between students who did and didn’t take the second subject
-  - Performance differences are presented in neutral, non-inferential terms (e.g. `+5.1 PTS`)
-  - Clicking a row opens a ShinyAlert popup with full details
-
-- **Filter subject pairings by grade band**  
-  - Enables viewing of subject pairings restricted to a selected grade level (e.g. “B and above”)
-  - **Performance comparisons are hidden in this view to avoid misinterpretation**
-  - A clear in-app explanation is displayed to reinforce this
-
-- **Designed for non-techincal users**  
-  - No policy knowledge is required
-  - Neutral UI language (e.g. avoids “correlation”, “impact”, “increase”)
-  - Clean layout using `fluidPage()` and `tabsetPanel()` with scrollable, readable tables
-  - Dark mode available for accessibility and usability purposes
+- Interactive grade distribution visualisation: users can select a subject and view a dynamic bar chart of grade distributions.
+- Explore individual, 2-subject and 3-subject pairings between all 137 A-Level subjects, and performance differences for all of them across all grade bands.
+- Filter by grade band to see what combinations the high-achievers got (though performance comparisons are hidden in this view and a clear in-app explanation is displayed to reinforce it)
+- Designed for non-technical users, including students, parents, academic institutions, and policymakers.
  
 
 ### App preview
@@ -117,18 +100,9 @@ R
 
 ## Limitations
 
-- **No statistical inference**  
-  - The app is explicitly non-inferential - no significance testing or causal claims
-  - PPE comparisons are descriptive only and based on precomputed values
+- No causal results and PPE comparisons (Tab 3) are descriptive-only.
+    - The app is explicitly stated as using non-inferential data, though further research is/will be conducted to quantify external factors.
+- Cannot see how many students got a specific grade, (i.e., cannot see how many got exactly a B in Mathematics, only how many got B and above). This is largely due to this specific functionality not being needed during the project, however this was one of the features added by Ofqual in the [current page](https://analytics.ofqual.gov.uk/apps/Alevel/SubjectCombinations/).
+- Streamed data updates were not part of the original prototype due to scope, though, as above, this has been added by Ofqual. 
 
-- **No specific grades**
-  - Cannot see how many students got a specific grade, (i.e., cannot see how many students got exactly a B in Mathematics, only how many got B and above). This is largely due to this specific functionality not being needed during the project, however this has been added in the [current page](https://analytics.ofqual.gov.uk/apps/Alevel/SubjectCombinations/)
-
-- **Grade filter disables comparisons**  
-  - When filtering by grade (Tab 3), performance differences are removed to avoid misleading conclusions based on subgroups
-
-- **Static dataset dependency**  
-  - All insights rely on the provided `.csv` file; dynamic or streaming data updates are not currently supported
-
-- **Limited accessibility enhancements**  
-  - Basic screen reader compatibility and contrast considered, but future improvements could include ARIA labels, tab key navigation cues, and full WCAG compliance
+- Accessibility features were implemented (screen reader compatibility, WCAG colours/contrast, dark mode), though future improvements could include ARIA labels, tab key navigation cues, and full WCAG compliance.
