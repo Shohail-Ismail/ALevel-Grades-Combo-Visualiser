@@ -50,13 +50,11 @@ Uses of the app include:
 
 ## Running the app
 
-- **R version required**: 4.2.0 or above
-- **Input data required**:
+- **R version**: 4.2.0 or above
+- **Input data**:
   - `SubjectComb_Final_RANDOMISED.csv`
 
 You must download R to run this program, or use a conda environment with R 4.2
-
-> Due to GDPR regulations, the actual dataset and code I used in my prototype are not included. However, for the demo, an anonymised mockup of the data (~1% the original size) and corresponding code is available ((`SubjectComb_Final_RANDOMISED.csv`)[SubjectComb_Final_RANDOMISED.csv]).
 
 ### R:
 
