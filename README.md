@@ -13,11 +13,11 @@
 ## Background information
 ### <ins>Summary</ins>
 
-The Department for Education (DfE) A-Level Grade Combinations Analyser is an R Shiny application prototype developed during my internship at the DfE.
+The Department for Education (DfE) A-Level Grade Combinations Analyser is an R Shiny application prototype developed during my internship at the DfE. 18769/2534172 19/2000
 
-- Explores the correlations in student performance between A-Level subjects, based on mixed data from 2022-24 (pre + post pandemic).
+- Explores the correlations in student performance between A-Level subjects, based on national AS and A-Level results from 2022 - 2024 (~4.5M rows of data representing ~2.5M unique students nationwide), accounting for pandemic/post-pandemic influence.
 - Supports decision-making for University admissions boards, policymakers, parents, and students.
-- All data precomputed so no inference is performed within the application - ensures confidentiality, statistical reproducibility, and reduced page latency. 
+- All data is precomputed for reduced latency within the website, in addition to increased confidentiality and reproducibility.
 
 Presented at the end of my internship to a group of interdepartmental policymakers and Ofqual analysts, where it was adopted and fed more data to give the [current page as it exists today](https://analytics.ofqual.gov.uk/apps/Alevel/SubjectCombinations/).
 
@@ -50,9 +50,11 @@ Uses of the app include:
 
 - **R version required**: 4.2.0 or above
 - **Input data required**:
-  - `SubjectComb_Final_RANDOMISED.csv` (placed in the working directory). Due to GDPR regulations, the actual data has been removed. A mockup of anonymised data of 10% the original size has been included for demo.
+  - `SubjectComb_Final_RANDOMISED.csv` (placed in the working directory).
 
-**You must download R to run this program. Alternatively, a conda environment can be created.**
+**Due to GDPR regulations, the actual data has been removed. An anonymised mockup of the data ~2% the original size has been included for demo.**
+
+You must download R to run this program, or use a conda environment with R 4.2
 
 ### R:
 
