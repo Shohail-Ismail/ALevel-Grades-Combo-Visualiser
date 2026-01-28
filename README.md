@@ -13,13 +13,15 @@
 ## Background information
 ### <ins>Summary</ins>
 
-The Department for Education (DfE) A-Level Grade Combinations Analyser is an R Shiny application prototype developed during my internship at the DfE. 18769/2534172 19/2000
+The Department for Education (DfE) A-Level Grade Combinations Analyser is an R Shiny application prototype developed during my internship at the DfE.
 
-- Explores the correlations in student performance between A-Level subjects, based on national AS and A-Level results from 2022 - 2024 (~4.5M rows of data representing ~2.5M unique students nationwide), accounting for pandemic/post-pandemic influence.
+- Explores the correlations in student performance between A-Level subjects, based on national AS and A-Level results from 2022 to 2024 accounting for pandemic/post-pandemic influence.
 - Supports decision-making for University admissions boards, policymakers, parents, and students.
-- All data is precomputed for reduced latency within the website, in addition to increased confidentiality and reproducibility.
+- All data was precomputed for reduced latency within the website, in addition to increased confidentiality and reproducibility.
 
 Presented at the end of my internship to a group of interdepartmental policymakers and Ofqual analysts, where it was adopted and fed more data to give the [current page as it exists today](https://analytics.ofqual.gov.uk/apps/Alevel/SubjectCombinations/).
+
+> The original dataset's size (1.87GB CSV representing all ~2.5M A-Level students from 2022 - 2024) and Official‑Sensitive class prohibit it's inclusion, however an anonymised mockup of the data (~1% the original size) and corresponding code is available to allow demoing of the program.
 
 <br>
 
@@ -30,7 +32,7 @@ Analysis of the data was done beforehand for causality using research and analys
   - Found strong correlations between prior attainment and grade outcomes across a signficant number of subject combinations, but this is not the only/primary factor at play for the result and there are limitations with model used (discussed in Ofqual's paper).
   - Therefore, <ins>**this website should only be used as supplementary (not primary) information for decision-making**</ins> (as stated on the website).
 
->Note: My final report for the internship emphasised this point that the statistical difficulty measures used were not direct measures of performance standards due to differences that may arise from many other factors; facts that were mentioned in the Ofqual paper along with the intrinsic stat-model limitations.
+>Note: My final report for the internship emphasised this point that the statistical difficulty measures used were not direct measures of performance standards due to differences that may arise from many other factors; facts that were mentioned in the Ofqual paper along with the inherent limitations of their model.
 
 <br>
 
@@ -50,11 +52,11 @@ Uses of the app include:
 
 - **R version required**: 4.2.0 or above
 - **Input data required**:
-  - `SubjectComb_Final_RANDOMISED.csv` (placed in the working directory).
-
-**Due to GDPR regulations, the actual data has been removed. An anonymised mockup of the data ~2% the original size has been included for demo.**
+  - `SubjectComb_Final_RANDOMISED.csv`
 
 You must download R to run this program, or use a conda environment with R 4.2
+
+> Due to GDPR regulations, the actual dataset and code I used in my prototype are not included. However, for the demo, an anonymised mockup of the data (~1% the original size) and corresponding code is available ((`SubjectComb_Final_RANDOMISED.csv`)[SubjectComb_Final_RANDOMISED.csv]).
 
 ### R:
 
