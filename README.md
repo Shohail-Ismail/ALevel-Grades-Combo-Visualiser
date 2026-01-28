@@ -17,7 +17,7 @@ The Department for Education (DfE) A-Level Grade Combinations Analyser is an R S
 
 - Explores the correlations in student performance between A-Level subjects, based on mixed data from 2022-24 (pre + post pandemic).
 - Supports decision-making for University admissions boards, policymakers, parents, and students.
-- All data precomputed so no inference is performed within the application - ensures confidentiality, statistical reproducibility, and reduced page latency for stakeholders. 
+- All data precomputed so no inference is performed within the application - ensures confidentiality, statistical reproducibility, and reduced page latency. 
 
 Presented at the end of my internship to a group of interdepartmental policymakers and Ofqual analysts, where it was adopted and fed more data to give the [current page as it exists today](https://analytics.ofqual.gov.uk/apps/Alevel/SubjectCombinations/).
 
